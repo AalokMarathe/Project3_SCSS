@@ -1,0 +1,641 @@
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("/Assets/Project3_assets/fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("/Assets/Project3_assets/fonts/Lato-Regular.ttf");
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hotel {
+  background: url("/Assets/Project3_assets/santa-monica-proper-hotel-bed.jpg") center center no-repeat fixed;
+}
+
+.hotel #hotel__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0em 1em;
+}
+
+.hotel #hotel__nav #nav__left {
+  font-weight: 600;
+}
+
+.hotel #hotel__nav #nav__left p {
+  font-family: "Lato-Regular";
+  color: white;
+}
+
+.hotel #hotel__nav #nav__left span {
+  color: #6b3299;
+}
+
+.hotel #hotel__nav #nav__right {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.hotel #hotel__nav #nav__right li #reg {
+  font-family: "Lato-Regular";
+  color: white;
+  font-size: 0.9em;
+  opacity: 0.9;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.hotel #hotel__hero {
+  margin: 0em 10em;
+  text-align: center;
+}
+
+.hotel #hotel__hero h1 {
+  font-family: "Lato-Bold";
+  color: white;
+  font-size: 4em;
+  padding-bottom: 0em;
+}
+
+.hotel #hotel__hero h4 {
+  font-family: "Lato-Bold";
+  color: white;
+}
+
+.hotel #hotel__hero #input__addr {
+  padding: 1em;
+  width: 30%;
+  font-family: "Lato-Regular";
+  font-weight: 600;
+}
+
+.hotel #hotel__hero #input__day {
+  padding: 1em;
+  width: 30%;
+  font-family: "Lato-Regular";
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.hotel #hotel__hero #input__sub {
+  font-family: "Lato-Regular";
+  padding: 1em 2em;
+  color: white;
+  font-weight: 600;
+  border: none 2px #6b3299;
+  background-color: #6b3299;
+}
+
+.hotel #hotel__hero #input__sub:hover {
+  font-family: "Lato-Regular";
+  padding: 1em 2em;
+  color: #6b3299;
+  font-weight: 600;
+  border: none 2px #6b3299;
+  background-color: white;
+}
+
+.hotel #hotel__hero #hero__policy h4 {
+  margin-bottom: 6em;
+  font-family: "Lato-Regular";
+  font-size: 0.9em;
+  color: white;
+  display: inline-block;
+}
+
+.hotel #hotel__hero #hero__policy h4 a {
+  font-family: "Lato-Regular";
+  font-size: 0.9em;
+  color: white;
+}
+
+.hotel #hotel__name {
+  font-family: "Lato-Regular";
+  color: white;
+  opacity: 0.5;
+  padding: 0em 1em 1em 1em;
+}
+
+.Ocassion {
+  background-color: #23232c;
+  padding: 2em;
+}
+
+.Ocassion #Ocassion__cards {
+  margin: 0em 10em;
+  text-align: center;
+}
+
+.Ocassion #Ocassion__cards h2 {
+  font-family: "Lato-Bold";
+  color: white;
+  font-size: 2.5em;
+}
+
+.Ocassion #Ocassion__cards #cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3em;
+}
+
+.Ocassion #Ocassion__cards #cards__1 {
+  border: none 2px;
+  width: 15%;
+  font-family: "Lato-Regular";
+  font-weight: 600;
+  color: white;
+}
+
+.Ocassion #Ocassion__cards #cards__2 {
+  border: none 2px;
+  width: 15%;
+  font-family: "Lato-Regular";
+  font-weight: 600;
+  color: white;
+}
+
+.Ocassion #Ocassion__cards #cards__3 {
+  border: none 2px;
+  width: 15%;
+  font-family: "Lato-Regular";
+  font-weight: 600;
+  color: white;
+}
+
+.Ocassion #Ocassion__cards #cards__4 {
+  border: none 2px;
+  width: 15%;
+  font-family: "Lato-Regular";
+  font-weight: 600;
+  color: white;
+}
+
+.App {
+  background-color: #6b3299;
+  padding: 2em;
+}
+
+.App #App__contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0em 10em;
+}
+
+.App #App__info #info__panel {
+  text-align: left;
+  color: white;
+  font-family: "Lato-Regular";
+  width: 50%;
+}
+
+.App #App__info #info__panel h2 {
+  font-size: 2.5em;
+}
+
+.App #App__info #info__panel p {
+  font-size: 1.5em;
+  opacity: 0.8;
+}
+
+.App #App__info #info__panel #app__ratings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+  color: white;
+}
+
+.App #App__info #info__panel #app__ratings #apple {
+  font-size: 1em;
+}
+
+.App #App__info #info__panel #app__ratings #apple svg {
+  width: auto;
+}
+
+.App #App__info #info__panel #app__ratings #apple span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-weight: 600;
+}
+
+.App #App__info #info__panel #app__ratings #android svg {
+  width: auto;
+}
+
+.App #App__info #info__panel #app__ratings #android span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-weight: 600;
+}
+
+.App #divider {
+  margin: 10em 0em;
+}
+
+.App #divider hr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10em 0em;
+  border-color: #2d1641;
+}
+
+.App #App__link {
+  text-align: center;
+}
+
+.App #App__link a {
+  text-decoration: none;
+  font-family: "Lato-Regular";
+  color: white;
+  padding: 0.5em 5em;
+  background-color: #2d1641;
+}
+
+.News {
+  background-color: #dee2f2;
+}
+
+.News #News__Articles {
+  margin: 0em 10em;
+}
+
+.News #News__Articles h2 {
+  text-align: center;
+  font-family: "Lato-Bold";
+  font-size: 2.5em;
+  color: #23232c;
+}
+
+.News #News__Articles #Articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.News #News__Articles #Articles__NY {
+  width: 25%;
+}
+
+.News #News__Articles #Articles__NY #NY__para {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 1em;
+}
+
+.News #News__Articles #Articles__NY #NY__para img {
+  height: 30px;
+}
+
+.News #News__Articles #Articles__NY #NY__para p {
+  font-family: "Lato-Regular";
+  color: #2d1641;
+  font-size: 1em;
+}
+
+.News #News__Articles #Articles__NY #NY_img {
+  width: auto;
+  text-align: center;
+}
+
+.News #News__Articles #Articles__CNBC {
+  width: 25%;
+}
+
+.News #News__Articles #Articles__CNBC #CNBC__para {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 1em;
+}
+
+.News #News__Articles #Articles__CNBC #CNBC__para img {
+  width: auto;
+  height: 30px;
+}
+
+.News #News__Articles #Articles__CNBC #CNBC__para p {
+  font-family: "Lato-Regular";
+  color: #2d1641;
+  font-size: 1em;
+}
+
+.News #News__Articles #Articles__CNBC #CNBC__img {
+  width: auto;
+  text-align: center;
+}
+
+.News #News__Articles #Articles__Today {
+  width: 25%;
+}
+
+.News #News__Articles #Articles__Today #Today__para {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 1em;
+}
+
+.News #News__Articles #Articles__Today #Today__para img {
+  width: auto;
+  height: 30px;
+}
+
+.News #News__Articles #Articles__Today #Today__para p {
+  font-family: "Lato-Regular";
+  color: #2d1641;
+  font-size: 1em;
+}
+
+.News #News__Articles #Articles__Today #Today__img {
+  width: auto;
+  text-align: center;
+}
+
+.News #News__Articles #mag__up {
+  border-color: #2d1641;
+}
+
+.News #News__Articles #mag__logos {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0em 15em;
+  padding-bottom: 1em;
+}
+
+.News #News__Articles #mag__logos img {
+  padding-top: 0.5em;
+}
+
+.News #News__Articles #mag__down {
+  margin-bottom: 4em;
+}
+
+.franchize {
+  background-color: #23232c;
+}
+
+.franchize #franchize__loc {
+  margin: 0em 10em;
+}
+
+.franchize #franchize__loc h2 {
+  font-family: "Lato-Bold";
+  font-size: 2.5em;
+  color: white;
+}
+
+.franchize #franchize__loc p {
+  font-family: "Lato-Regular";
+  font-size: 1.5em;
+  color: white;
+}
+
+.franchize #franchize__cities {
+  margin: 0em 7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 3em;
+  font-family: "Lato-Regular";
+  font-size: 0.9em;
+}
+
+.franchize #franchize__cities #li1 {
+  list-style-type: none;
+  color: white;
+}
+
+.franchize #franchize__cities #li1 li {
+  padding: 0.7em;
+}
+
+.franchize #franchize__cities #li2 {
+  list-style-type: none;
+  color: white;
+}
+
+.franchize #franchize__cities #li2 li {
+  padding: 0.7em;
+}
+
+.franchize #franchize__cities #li3 {
+  list-style-type: none;
+  color: white;
+}
+
+.franchize #franchize__cities #li3 li {
+  padding: 0.7em;
+}
+
+.franchize #franchize__cities #li4 {
+  list-style-type: none;
+  color: white;
+}
+
+.franchize #franchize__cities #li4 li {
+  padding: 0.7em;
+}
+
+.footers #parts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footers #parts__1 {
+  background-color: #6b3299;
+  color: white;
+  padding: 10em;
+  width: 25%;
+  text-align: center;
+}
+
+.footers #parts__1 h2 {
+  text-align: left;
+  font-family: "Lato-Bold";
+  font-size: 2.5em;
+}
+
+.footers #parts__1 #dwld__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footers #parts__1 #dwld__btn #btn1 {
+  margin-right: 1em;
+}
+
+.footers #parts__2 {
+  background-color: white;
+  color: white;
+  padding: 10em;
+  margin-left: 5em;
+  width: 25%;
+  text-align: left;
+  list-style-type: none;
+}
+
+.footers #parts__2 li {
+  padding: 0.5em 0em;
+}
+
+.footers #parts__2 li a {
+  text-decoration: none;
+  font-family: "Lato-Regular";
+  color: #cccccc;
+}
+
+.footers #parts__2 p {
+  margin-left: 2.5em;
+  font-family: "Lato-Regular";
+  font-size: 0.9em;
+  color: #cccccc;
+}
+
+.footers #parts__2 #soc__li {
+  margin: 0em 2.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  opacity: 0.5;
+}
+
+.footers #parts__3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0em 5em;
+}
+
+.footers #parts__3 p {
+  font-family: "Lato-Regular";
+  color: #cccccc;
+}
+
+.footers #parts__3 span {
+  color: #6b3299;
+}
+/*# sourceMappingURL=Project3.css.map */
