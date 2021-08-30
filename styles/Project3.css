@@ -9,13 +9,8 @@
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  margin: 0em;
+  padding: 0em;
 }
 
 .hotel {
@@ -98,12 +93,24 @@ body {
   font-weight: 600;
 }
 
+.hotel #hotel__hero #input__addr:focus {
+  outline: none;
+  border: solid 2px #640064;
+  -webkit-box-shadow: 0px 0px 0em 0.4rem rgba(107, 50, 153, 0.25);
+          box-shadow: 0px 0px 0em 0.4rem rgba(107, 50, 153, 0.25);
+}
+
 .hotel #hotel__hero #input__day {
   padding: 1em;
   width: 30%;
   font-family: "Lato-Regular";
   font-weight: 600;
-  opacity: 0.7;
+}
+
+.hotel #hotel__hero #input__day:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 0em 0.2rem rgba(107, 50, 153, 0.25);
+          box-shadow: 0px 0px 0em 0.2rem rgba(107, 50, 153, 0.25);
 }
 
 .hotel #hotel__hero #input__sub {
@@ -122,6 +129,7 @@ body {
   font-weight: 600;
   border: none 2px #6b3299;
   background-color: white;
+  cursor: pointer;
 }
 
 .hotel #hotel__hero #hero__policy h4 {
@@ -143,6 +151,7 @@ body {
   color: white;
   opacity: 0.5;
   padding: 0em 1em 1em 1em;
+  margin: 0;
 }
 
 .Ocassion {
@@ -230,7 +239,9 @@ body {
   text-align: left;
   color: white;
   font-family: "Lato-Regular";
-  width: 50%;
+  width: 80%;
+  padding-right: 3em;
+  border-right: 2px solid #dfdfdf;
 }
 
 .App #App__info #info__panel h2 {
@@ -250,14 +261,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   text-align: left;
   color: white;
 }
 
 .App #App__info #info__panel #app__ratings #apple {
+  display: block;
+  width: 100%;
+  padding: 1em;
   font-size: 1em;
 }
 
@@ -272,6 +285,12 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-weight: 600;
+}
+
+.App #App__info #info__panel #app__ratings #android {
+  display: block;
+  width: 100%;
+  padding: 1em;
 }
 
 .App #App__info #info__panel #app__ratings #android svg {
@@ -317,6 +336,8 @@ body {
 
 .News {
   background-color: #dee2f2;
+  margin: 0em;
+  padding: 3em 0;
 }
 
 .News #News__Articles {
@@ -328,6 +349,8 @@ body {
   font-family: "Lato-Bold";
   font-size: 2.5em;
   color: #23232c;
+  margin: 0;
+  padding-bottom: 1.2em;
 }
 
 .News #News__Articles #Articles {
@@ -460,7 +483,7 @@ body {
 }
 
 .News #News__Articles #mag__down {
-  margin-bottom: 4em;
+  margin: 0;
 }
 
 .franchize {
@@ -475,6 +498,7 @@ body {
   font-family: "Lato-Bold";
   font-size: 2.5em;
   color: white;
+  margin: 0;
 }
 
 .franchize #franchize__loc p {

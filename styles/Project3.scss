@@ -16,7 +16,8 @@ $colors:(primary: white,
     articles__bgc: rgb(222,226,242),
     article_h:rgb(35,35,44),
     article_txt: rgb(45,22,65),
-    footer__txt: rgb(204,204,204)
+    footer__txt: rgb(204,204,204),
+    txtbx__c:rgba(107,50,153,0.25)
     );
 $font__lato:(L_bold:"Lato-Bold",
     L_regular:"Lato-Regular"
@@ -29,8 +30,8 @@ $fontsizes:(caption:0.9em,
 $fontprop:(ft__b:600);
 
 body {
-    display: flex;
-    flex-direction: column;
+    margin: 0em;
+    padding: 0em;
 }
 
 .hotel {
@@ -98,13 +99,22 @@ body {
             font-family: map-get($font__lato, L_regular);
             font-weight: map-get($fontprop, ft__b);
         }
+        #input__addr:focus{
+            outline: none;
+            border: solid 2px rgb(100, 0, 100);
+            box-shadow: 0px 0px 0em 0.4rem map-get($colors , txtbx__c ) ;
+        }
 
         #input__day {
             padding: 1em;
             width: 30%;
             font-family: map-get($font__lato, L_regular);
             font-weight: map-get($fontprop, ft__b);
-            opacity: 0.7;
+        }
+        #input__day:focus{
+            outline: none;
+            // border: groove 2px map-get($colors , secondary );
+            box-shadow: 0px 0px 0em 0.2rem map-get($colors , txtbx__c ) ;
         }
 
         #input__sub {
@@ -123,6 +133,7 @@ body {
             font-weight: map-get($fontprop, ft__b);
             border: none 2px map-get($colors, secondary);
             background-color: map-get($colors, primary);
+            cursor: pointer;
         }
 
         #hero__policy {
@@ -147,6 +158,7 @@ body {
         color: map-get($colors, primary);
         opacity: 0.5;
         padding: 0em 1em 1em 1em;
+        margin: 0;
     }
 }
 
@@ -225,7 +237,9 @@ body {
             text-align: left;
             color: map-get($colors, primary);
             font-family: map-get($font__lato, L_regular);
-            width: 50%;
+            width: 80%;
+            padding-right: 3em;
+            border-right: 2px solid rgb(223, 223, 223);
 
             h2 {
                 font-size: map-get($fontsizes, x_large);
@@ -239,12 +253,14 @@ body {
             #app__ratings {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
+                justify-content: space-around;
                 text-align: left;
                 color: map-get($colors, primary);
 
                 #apple {
-
+                    display: block;
+                    width: 100%;
+                    padding: 1em;
                     font-size: map-get($fontsizes, smol);
                     svg{
                         width: auto;
@@ -257,6 +273,9 @@ body {
                 }
 
                 #android {
+                    display: block;
+                    width: 100%;
+                    padding: 1em;
                     svg{
                         width: auto;
                     }
@@ -297,6 +316,8 @@ body {
 }
 .News{
     background-color: map-get($colors , articles__bgc );
+    margin: 0em;
+    padding: 3em 0;
     #News__Articles{
         margin: 0em 10em;
         h2{
@@ -304,6 +325,8 @@ body {
             font-family: map-get($font__lato , L_bold );
             font-size: map-get($fontsizes , x_large );
             color: map-get($colors , article_h );
+            margin: 0;
+            padding-bottom: 1.2em;
         }
         #Articles{
             display: flex;
@@ -387,7 +410,7 @@ body {
             }
         }
         #mag__down{
-            margin-bottom: 4em;
+            margin: 0;
         }
     }
 }
@@ -399,6 +422,7 @@ body {
             font-family: map-get($font__lato , L_bold );
             font-size: map-get($fontsizes , x_large );
             color: map-get($colors , primary );
+            margin: 0;
         }
         p{
             font-family: map-get($font__lato , L_regular );
